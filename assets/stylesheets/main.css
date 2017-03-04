@@ -1,0 +1,154 @@
+/* FONTS */
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+/* COLORS */
+/*
+black: #303030
+burnt orange: #be5f27
+brown: #8e5942
+golden: #d49b30
+light tan: e0d7c5
+light brown: c3bbac
+off-white: f2f2f2
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* FONTS */
+h1,
+h2,
+h2 a, 
+h2 a:hover, 
+footer p {
+	font-family: 'Oswald', sans-serif;
+}
+h3,
+h4,
+p,
+p a,
+p a:hover,
+nav p {
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	font-size: 2.1em;
+	color: #303030;
+}
+h2 {
+	font-size: 1.56em;
+	color: #f2f2f2;
+}
+h2 a {
+	font-size: 1.56em;
+	color: #f2f2f2;
+	font-style: italic;
+	text-decoration: underline;
+}
+h2 a:hover {
+	font-size: 1.56em;
+	color: #d49b30;
+	font-style: italic;
+	text-decoration: underline;
+}
+h3 {
+	font-weight: 900;
+	font-size: 1.125em;
+	color: #8e5942;
+	text-transform: uppercase;
+}
+h4 {
+	font-weight: 300;
+	font-weight: 1.125em;
+	color: #8e5942;
+	text-transform: uppercase;
+}
+p {
+	font-weight: 400;
+	font-weight: 1em;
+	color: #303030;
+	line-height: 1.6em;
+}
+p a {
+	font-weight: 700i;
+	font-size: 1em;
+	color: #be5f27;
+}
+p a:hover {
+	font-weight: 700i;
+	font-size: 1em;
+	color: #d49b3c;
+	text-decoration: underline;
+}
+nav p a {
+	font-weight: 400;
+	font-size: 1.06em;
+	color: #303030;
+}
+footer p {
+	font-size: 0.9em;
+	color: #f2f2f2;
+}
+
+
+/* HEADER */
+.logo {
+	max-width: 70px;
+}
+
+a {
+	text-decoration: none;
+}
+header a {
+	
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.navigation {
+	background: #f2f2f2;
+	opacity: 0.9;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	padding: 2% 1.5%;
+}
+
+
+
+
+/* FOOTER */
+footer {
+	background: #be5f27;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+.desktop-only {
+	display: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 450px) {
+	/* HEADER */
+	header img {
+		max-width: 140px;
+	}
+
+	.navigation {
+		height: 150px;
+		padding: 0;
+	}
+
+	/* FOOTER */
+	.desktop-only {
+		display: inline-block;
+	}
+}
