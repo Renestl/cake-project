@@ -69,7 +69,7 @@ h4 {
 }
 p {
 	font-weight: 400;
-	font-weight: 1em;
+	font-size: 1em;
 	color: #303030;
 	line-height: 1.6em;
 }
@@ -124,13 +124,11 @@ header a {
 /* FOOTER */
 footer {
 	background: #be5f27;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
 	text-align: center;
 }
 .contact p:first-of-type {
 	text-transform: uppercase;
+	padding-top: 2%;
 }
 
 .social ul {
@@ -144,12 +142,20 @@ footer {
 	height: 38px;
 }
 
+.social p {
+	margin-bottom: 0;
+	padding-bottom: 2%;
+}
+
 .desktop-only {
 	display: none;
 }
 
 
+
+/* ############# */
 /* MEDIA QUERIES */
+/* ############# */
 
 @media screen and (min-width: 480px) {
 	/* HEADER */
@@ -172,6 +178,7 @@ footer {
 		justify-content: space-around;
 		align-items: center;
 		padding: 1% .5%;
+		vertical-align: bottom;
 	}
 	footer .logo {
 		max-width: 100px;
