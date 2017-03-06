@@ -74,13 +74,15 @@ p {
 	line-height: 1.6em;
 }
 p a {
-	font-weight: 700i;
+	font-weight: 700;
 	font-size: 1em;
+	font-style: italic;
 	color: #be5f27;
 }
 p a:hover {
-	font-weight: 700i;
+	font-weight: 700;
 	font-size: 1em;
+	font-style: italic;
 	color: #d49b3c;
 	text-decoration: underline;
 }
