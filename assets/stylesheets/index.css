@@ -63,6 +63,25 @@ h2:nth-child(6) {
 	transform: translate(0, -200%)
 }
 
+/* HOURS */
+.hours {
+	font-size: 1.5em;
+	background: #8e5942;
+}
+.hours ul {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+.hours li {
+	list-style: none;
+	color: #f2f2f2;
+	text-align: center;
+}
+span {
+	font-weight: bold;
+}
+
 
 /* ############# */
 /* MEDIA QUERIES */
@@ -90,6 +109,13 @@ h2:nth-child(6) {
 		margin-left: auto; 
   		margin-right: auto;
 		max-width: 150px; 
+	}
+
+	/* HOURS */
+	.hours ul {
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 
 }

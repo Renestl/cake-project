@@ -131,6 +131,7 @@ footer {
 .contact p:first-of-type {
 	text-transform: uppercase;
 	padding-top: 2%;
+	margin-top: 0;
 }
 
 .social ul {
