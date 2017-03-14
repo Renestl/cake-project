@@ -15,8 +15,10 @@ off-white: f2f2f2
 */
 
 body {
-	margin: 0;
 	padding: 0;
+	background: #f2f2f2;
+	max-width: 1220px;
+	margin: 0 auto;
 }
 
 /* FONTS */
