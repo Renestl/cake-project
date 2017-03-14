@@ -1,0 +1,59 @@
+/* HEADER */
+.hero {
+	background-image: url("../images/about/fix-about-hero.jpg");
+
+}
+
+/* MAIN SECTION */
+h3 {
+	line-height: .5em;
+}
+h3:nth-of-type(2) {
+	font-weight: 300;
+}
+.baker-img {
+	background: #c3bbac;
+	text-align: center;
+}
+.baker-img img {
+	max-width: 100vw;
+	max-height: 50vh;
+}
+.first-img {
+	padding-top: 4%;
+}
+.baker-bio {
+	padding: 0 5% 10% 5%;
+}
+
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ############# */
+
+@media screen and (min-width: 480px) {
+
+	/* MAIN SECTION HEADER */
+	h1 {
+		max-width: 200px; 
+	}
+}
+
+@media screen and (min-width: 600px) {
+	
+	/* BAKERS BIO */
+	.baker1, 
+	.baker2,
+	.baker3 {
+		display: flex;
+		flex-direction: row;
+	}
+	.baker1 .baker-bio{
+		padding-top: 10%;
+	}
+	.baker-img img,
+	.baker-bio {
+		width: 50vw;
+	}
+}
