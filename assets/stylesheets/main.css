@@ -107,6 +107,14 @@ footer p {
 a {
 	text-decoration: none;
 }
+/* HEADER */
+.hero {
+	height: 35vh;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: 50% 0;
+}
 header a {
 	
 	font-weight: 400;
@@ -124,6 +132,38 @@ header a {
 	text-transform: uppercase;
 }
 
+/* MAIN SECTION */
+.main-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	align-self: flex-start;
+	margin: 0;
+	background: #d49b30;
+	color: #f2f2f2;
+	display: inline-block;
+	padding: 1%;
+	margin: 0 auto;
+}
+
+/* INTERESTED IN CUSTOM ORDERS */
+.interested {
+	font-size: 1.5em;
+	background: #8e5942;
+	padding: 3% 2%;
+	text-align: center;
+}
+.interested p {
+	color: #f2f2f2;
+}
+.interested .bold {
+	font-weight: 900;
+}
+.interested .custom {
+	font-style: italic;
+	text-decoration: underline;
+}
 
 /* FOOTER */
 footer {
@@ -193,6 +233,23 @@ footer {
 	}
 	.social p {
 		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+
+	/* INTERESTED IN CUSTOM ORDERS */
+	.interested {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	/* INTERESTED IN CUSTOM ORDERS */
+	.interested {
+		font-size: 1.5em;
 	}
 
 }
