@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1260px;
 	margin: 0 auto;
 }
 
@@ -218,9 +218,6 @@ footer {
 	}
 
 	/* MAIN SECTION HEADER */
-	h1 {
-		max-width: 200px; 
-	}
 
 	/* FOOTER */
 	.desktop-only {
@@ -246,14 +243,13 @@ footer {
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 599px) {
 
-}
 
 @media screen and (min-width: 600px) {
 
 	/* MAIN SECTION */
 	h1 {
+		max-width: 200px; 
 		position: absolute;
 		left: 0;
 		right: 0;

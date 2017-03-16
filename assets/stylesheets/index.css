@@ -99,9 +99,6 @@ span {
 		display: block;
 	}
 
-	.main-section {
-		flex-direction: row;
-	}
 	.fix-left,
 	.fix-right {
 		/*width: 50%;*/
@@ -117,9 +114,6 @@ span {
 	}
 	.fix-right img {
 		width: 80px;
-	}
-	h1 {
-		max-width: 150px; 
 	}
 
 	/* HOURS */
@@ -174,17 +168,14 @@ span {
 	.cake2 .mini-promo{
 		order: 1;
 	}
-	/*.cake3 {
-		background: blue;
-		font-size: 0;
-	}
-	.cake3 h2 {
-		font-size: 1.20rem;
-	}*/
 
 }
 
 @media screen and (min-width: 600px) {
+
+	.main-section {
+		flex-direction: row;
+	}
 
 	h2 {
 		font-size: 2.25em;
