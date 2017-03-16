@@ -1,0 +1,64 @@
+/* HEADER */
+.hero {
+	background-image: url("../images/hours/fix-hours-hero.jpg");
+}
+
+/* MAIN SECTION */
+.main-section {
+	flex-direction: column;
+}
+.hours-left {
+	padding: 5%;
+}
+.hours-right {
+	background: #e0d7c5;
+	text-align: center;
+	color: #8e5942;
+	font-size: 2.1em;
+	line-height: 1.5em;
+}
+ul {
+	-webkit-padding-start: 0;
+}
+li {
+	list-style: none;
+}
+span {
+	font-weight: bold;
+}
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ############# */
+
+@media screen and (min-width: 480px) {
+	.hours-left {
+		padding-top: 9%;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.main-section {
+	flex-direction: row;
+}
+	.hours-left,
+	.hours-right {
+		flex: 1;
+	}
+	.hours-right {
+		font-size: 1.8em;
+		line-height: 1.5em;
+		text-align: initial;
+		padding-top: 10%;
+		padding-left: 5%;
+	}
+
+}
+
+@media screen and (min-width: 650px) {
+	.hours-right {
+		font-size: 2.1em;
+		padding-top: 5%;
+	}
+}
