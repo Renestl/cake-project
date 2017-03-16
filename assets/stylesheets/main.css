@@ -17,7 +17,7 @@ off-white: f2f2f2
 body {
 	padding: 0;
 	background: #f2f2f2;
-	max-width: 1220px;
+	/*max-width: 1220px;*/
 	margin: 0 auto;
 }
 
@@ -135,17 +135,14 @@ header a {
 /* MAIN SECTION */
 .main-section {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 h1 {
-	align-self: flex-start;
-	margin: 0;
 	background: #d49b30;
 	color: #f2f2f2;
 	display: inline-block;
 	padding: 1%;
-	/*margin: 0 auto;*/
-	flex-grow: 1;
+	margin: 0;
 	text-align: center;
 }
 
@@ -215,14 +212,7 @@ footer {
 		padding: 0;
 	}
 
-	/* MAIN SECTION */
-	h1 {
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin-left: auto; 
-  		margin-right: auto;
-	}
+	
 
 	/* FOOTER */
 	.desktop-only {
@@ -249,6 +239,15 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+
+	/* MAIN SECTION */
+	h1 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto; 
+  		margin-right: auto;
+	}
 
 	/* INTERESTED IN CUSTOM ORDERS */
 	.interested {

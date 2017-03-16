@@ -23,12 +23,21 @@ h3:nth-of-type(2) {
 }
 .baker-bio {
 	padding: 0 5% 10% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-.main-section {
-	overflow: hidden;
+.baker-bio h3 {
+	line-height: 0;
+	margin-bottom: 1%;
 }
 .baker2 .baker-img {
+	display: flex;
 	justify-content: flex-end;
+}
+.baker2 .baker-bio {
+	align-items: flex-end;
+	text-align: right;
 }
 
 
@@ -50,7 +59,7 @@ h3:nth-of-type(2) {
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 	
 	/* BAKERS BIO */
 	.baker1, 
@@ -59,22 +68,33 @@ h3:nth-of-type(2) {
 		display: flex;
 		flex-direction: row;
 	}
-	.baker1 .baker-bio{
-		padding-top: 10%;
+	.baker1 .baker-img, 
+	.baker1 .baker-bio {
+		padding-top: 8%;
 	}
 	.baker-img {
 		display: flex;
 		width: 50vw;
+		max-height: 50vh;
+		
 	}
 	.baker-img img{
 		max-width: 50vw;
 	}
 	.baker-bio {
-		display: flex;
-		flex-direction: column;
-		max-width: 50vw;
-						
+		
+		
+		width: 50vw;
+		padding: 0 2%;
+		flex: 1;
 	}
-	
+	.baker2 .baker-img {
+		order: 2;
+		flex: 1;
+
+	}
+	.baker2 .baker-bio {
+		order: 1;
+	}
 
 }
