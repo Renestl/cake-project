@@ -75,23 +75,29 @@ h3:nth-of-type(2) {
 	.baker-img {
 		display: flex;
 		width: 50vw;
-		max-height: 50vh;
-		
+		max-height: 50vh;	
+		/*flex: 1;*/
 	}
 	.baker-img img{
 		max-width: 50vw;
 	}
 	.baker-bio {
-		
-		
 		width: 50vw;
-		padding: 0 2%;
-		flex: 1;
+		/*padding: 0 2%;*/
+		padding: 0;
+		/*flex: 1;*/
 	}
+	.baker-bio h3 {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.baker-bio p {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 	.baker2 .baker-img {
 		order: 2;
-		flex: 1;
-
 	}
 	.baker2 .baker-bio {
 		order: 1;
