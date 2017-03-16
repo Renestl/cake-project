@@ -13,7 +13,6 @@ h3:nth-of-type(2) {
 }
 .baker-img {
 	background: #c3bbac;
-	text-align: center;
 }
 .baker-img img {
 	max-width: 100vw;
@@ -24,6 +23,12 @@ h3:nth-of-type(2) {
 }
 .baker-bio {
 	padding: 0 5% 10% 5%;
+}
+.main-section {
+	overflow: hidden;
+}
+.baker2 .baker-img {
+	justify-content: flex-end;
 }
 
 
@@ -37,6 +42,11 @@ h3:nth-of-type(2) {
 	/* MAIN SECTION HEADER */
 	h1 {
 		max-width: 200px; 
+	}
+	.baker1 .baker-img,
+	.baker1 .baker-bio {
+		flex: 1;
+		padding-top: 10%;
 	}
 }
 
@@ -52,8 +62,19 @@ h3:nth-of-type(2) {
 	.baker1 .baker-bio{
 		padding-top: 10%;
 	}
-	.baker-img img,
-	.baker-bio {
+	.baker-img {
+		display: flex;
 		width: 50vw;
 	}
+	.baker-img img{
+		max-width: 50vw;
+	}
+	.baker-bio {
+		display: flex;
+		flex-direction: column;
+		max-width: 50vw;
+						
+	}
+	
+
 }
