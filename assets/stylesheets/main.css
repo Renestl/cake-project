@@ -17,7 +17,12 @@ off-white: f2f2f2
 body {
 	padding: 0;
 	background: #f2f2f2;
-	/*max-width: 1220px;*/
+	margin: 0;
+	
+}
+
+.container {
+	max-width: 1300px;
 	margin: 0 auto;
 }
 
@@ -238,6 +243,10 @@ footer {
 	.social p {
 		text-align: center;
 	}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
 
 }
 
