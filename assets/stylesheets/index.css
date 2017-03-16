@@ -5,7 +5,9 @@
 }
 
 /* GET FIX SECTION */
-
+.main-section {
+	flex-direction: column;
+}
 .fix-left {
 	padding: 5% 5%;
 	max-height: 300px;
@@ -97,6 +99,9 @@ span {
 		display: block;
 	}
 
+	.main-section {
+		flex-direction: row;
+	}
 	.fix-left,
 	.fix-right {
 		/*width: 50%;*/

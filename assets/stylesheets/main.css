@@ -135,8 +135,8 @@ header a {
 /* MAIN SECTION */
 .main-section {
 	display: flex;
-	flex-direction: column;
 }
+
 h1 {
 	background: #d49b30;
 	color: #f2f2f2;
@@ -212,7 +212,10 @@ footer {
 		padding: 0;
 	}
 
-	
+	/* MAIN SECTION HEADER */
+	h1 {
+		max-width: 200px; 
+	}
 
 	/* FOOTER */
 	.desktop-only {
