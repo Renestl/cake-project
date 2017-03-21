@@ -1,0 +1,49 @@
+/* HEADER */
+.hero {
+	background-image: url("../images/custom/fix-custom-hero.jpg");
+}
+
+/* MAIN SECTION */
+.main-section {
+	flex-direction: column;
+}
+.custom {
+	background: #e0d7c5;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10%;
+}
+span {
+	font-weight: bold;
+}
+.bottom-border {
+	border-bottom: 2px white solid;
+	padding: 25px 0;
+}
+
+/* FORM */
+label,
+button {
+	text-transform: uppercase;
+}
+
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ############# */
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 600px) {
+	/*.custom {
+		width: 50%;
+		margin: 0 auto;
+		padding: 10%;
+	}*/
+}
+
+@media screen and (min-width: 700px) {
+
+}
