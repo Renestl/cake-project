@@ -121,7 +121,6 @@ a {
 	background-position: 50% 0;
 }
 header a {
-	
 	font-weight: 400;
 	font-size: 1em;
 }
@@ -205,6 +204,24 @@ footer {
 /* ############# */
 /* MEDIA QUERIES */
 /* ############# */
+
+@media screen and (min-width: 0px) and (max-width: 350px) {
+	
+	/* HEADER */
+	.logo {
+		max-width: 50px;
+	}
+
+	nav p a {
+		font-size: .90em;
+	}
+
+	.navigation {
+		max-height: 150px;
+		padding: 0;
+	}
+	
+}
 
 @media screen and (min-width: 480px) {
 	/* HEADER */
