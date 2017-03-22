@@ -1,0 +1,41 @@
+/* HEADER */
+.hero {
+	background-image: url("../images/menu/fix-menu-hero.jpg");
+}
+
+/* MAIN SECTION */
+.main-section {
+	flex-direction: column;
+}
+.menu {
+	background: #e0d7c5;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10%;
+}
+
+/* ############# */
+/* MEDIA QUERIES */
+/* ############# */
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 600px) {
+
+	/* MAIN SECTION */
+	.menu {
+		width: 50%;
+		padding: 10%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	/* MAIN SECTION */
+	.menu {
+		width: 45%;
+		padding: 10%;
+	}
+}
