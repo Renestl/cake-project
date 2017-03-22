@@ -22,9 +22,37 @@ span {
 }
 
 /* FORM */
+input,
+textarea {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	color: #303030;
+	line-height: 1.6em;
+	width: 95%;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #c3bbac;
+	border: none;
+}
 label,
 button {
 	text-transform: uppercase;
+	display: block;
+}
+label {
+	font-size: .75em;
+	color: #303030;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+button {
+	font-weight: bold;
+	margin: 25px auto 0px auto;
+	background: #be5f27;
+	color: #f2f2f2;
+	padding: 17px;
+	border: none;
+	box-shadow: 2px 2px 0 #c3bbac;
 }
 
 
@@ -37,13 +65,19 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-	/*.custom {
+
+	/* MAIN SECTION */
+	.custom {
 		width: 50%;
-		margin: 0 auto;
 		padding: 10%;
-	}*/
+	}
 }
 
 @media screen and (min-width: 700px) {
 
+	/* MAIN SECTION */
+	.custom {
+		width: 45%;
+		padding: 10%;
+	}
 }
