@@ -20,8 +20,20 @@ span {
 	border-bottom: 2px white solid;
 	padding: 25px 0;
 }
+.bottom-border h3 {
+	margin: 9px auto;
+}
+.bottom-border p {
+	margin: 0;
+}
 
 /* FORM */
+form {
+	padding: 25px 0;
+}
+form h3{
+	margin: 9px 0;
+}
 input,
 textarea {
 	font-family: 'Lato', sans-serif;
