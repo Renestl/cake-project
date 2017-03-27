@@ -5,30 +5,84 @@
 
 /* MAIN SECTION */
 .main-section {
-	flex-direction: column;
+	flex-direction: column;	
 }
+
+/* MENU TABS */
+.options {
+	display: flex;
+	flex-direction: row;
+}
+h1 {
+	width: 50%;
+	padding: 0;
+}
+.option-active {
+	background: #d49b30;
+	color: #f2f2f2;
+}
+.option-nonactive {
+	background: #f2f2f2;
+	color: #d49b30;
+}
+
+
+/* MENU SECTION */
 .menu {
 	background: #e0d7c5;
 	width: 80%;
 	margin: 0 auto;
 	padding: 10%;
 }
+/*.menu-cakes {
+
+}*/
+.menu-other {
+	display: none;
+}
+.item {
+	border-bottom: 2px white solid;
+	padding: 25px 0;
+}
+.item h3, .custom-item h3 {
+	margin: 9px auto;
+}
+.item p, .custom-item p {
+	margin: 0;
+}
+.custom-item {
+	padding: 25px 0;
+}
+
 
 /* ############# */
 /* MEDIA QUERIES */
 /* ############# */
 
 @media screen and (min-width: 480px) {
-
-}
-
-@media screen and (min-width: 600px) {
-
 	/* MAIN SECTION */
 	.menu {
 		width: 50%;
 		padding: 10%;
 	}
+	.options {
+		justify-content: center;
+		background: #e0d7c5;
+		width: 70%;
+		margin: 0 auto;
+	}
+	h1 {
+		max-width: 200px;
+		position: static;
+		margin: 0;
+
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+	
+	
 }
 
 @media screen and (min-width: 700px) {
@@ -37,5 +91,8 @@
 	.menu {
 		width: 45%;
 		padding: 10%;
+	}
+	.options {
+		width: 65%;
 	}
 }
