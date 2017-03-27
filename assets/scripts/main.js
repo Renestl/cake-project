@@ -44,24 +44,28 @@ $(document).ready(function() {
 
 	// TOGGLE MENU TABS
 	$('#other').on('click', function() {
-		$('.menu-cakes').css('display', 'none');
-		$('#cakes').removeClass('option-active');
-		$('#cakes').addClass('option-nonactive');
+		$('.menu-cakes').fadeOut(500, function() {
+			$('.menu-other').fadeIn(500);
+		});
 
-		$('.menu-other').css('display', 'initial');
-		$('#other').removeClass('option-nonactive');
-		$('#other').addClass('option-active');
+		$('#cakes').removeClass('option-active')
+					.addClass('option-nonactive');
+
+		$('#other').removeClass('option-nonactive')
+					.addClass('option-active');
 		
 	});
 
 	$('#cakes').on('click', function() {
-		$('.menu-other').css('display', 'none');
-		$('#other').removeClass('option-active');
-		$('#other').addClass('option-nonactive');
+		$('.menu-other').fadeOut(500, function() {
+			$('.menu-cakes').fadeIn(500);
+		});
 
-		$('.menu-cakes').css('display', 'initial');
-		$('#cakes').removeClass('option-nonactive');
-		$('#cakes').addClass('option-active');
+		$('#other').removeClass('option-active')
+					.addClass('option-nonactive');
+
+		$('#cakes').removeClass('option-nonactive')
+					.addClass('option-active');
 	});
 
 });
