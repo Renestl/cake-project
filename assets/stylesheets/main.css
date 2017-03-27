@@ -103,6 +103,11 @@ footer p {
 	color: #f2f2f2;
 }
 
+/* NAVIGATION */
+.active {
+	color: yellow;
+}
+
 
 /* HEADER */
 .logo {
