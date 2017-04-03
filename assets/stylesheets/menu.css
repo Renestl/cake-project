@@ -12,10 +12,12 @@
 .options {
 	display: flex;
 	flex-direction: row;
+	z-index: auto;
 }
 h1 {
 	width: 50%;
 	padding: 0;
+	z-index: auto;
 }
 .option-active {
 	background: #d49b30;

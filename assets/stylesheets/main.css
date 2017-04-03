@@ -139,13 +139,28 @@ header a {
 	height: 100px;
 	padding: 2% 1.5%;
 	text-transform: uppercase;
+	position: fixed;
+	width: 100%;
 }
+
+/* HEADER ON SCROLL */
+.scrollUp .navigation{
+	height: 60px;
+	transition: all 0.5s ease-in;
+}
+.scrollUp .logo{
+	max-width: 45px;
+	transition: all 0.5s ease-in;
+}
+
 
 /* MAIN SECTION */
 .main-section {
 	display: flex;
 }
-
+.order {
+	z-index: -2;
+}
 h1 {
 	background: #d49b30;
 	color: #f2f2f2;
@@ -153,6 +168,7 @@ h1 {
 	padding: 1%;
 	margin: 0;
 	text-align: center;
+	z-index: -1;
 }
 
 /* INTERESTED IN CUSTOM ORDERS */
