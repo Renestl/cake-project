@@ -42,9 +42,15 @@ $(document).ready(function() {
 	// };
 	
 	// SHRINK & FIX NAV BAR ON SCROLL
-	$(window).scroll(function() {
-		$('#header').addClass('scrollUp');
-	})
+	$(window).on("scroll", function() {
+		if ($(this).scrollTop() > 147) {
+			$('#header').addClass('scrollUp');
+		} else {
+			$('#header').removeClass('scrollUp');
+		}
+
+		
+	});
 
 
 	// TOGGLE MENU TABS
