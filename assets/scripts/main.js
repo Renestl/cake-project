@@ -42,6 +42,10 @@ $(document).ready(function() {
 	// };
 	
 	// SHRINK & FIX NAV BAR ON SCROLL
+	$(window).scroll(function() {
+		$('#header').addClass('scrollUp');
+	})
+
 
 	// TOGGLE MENU TABS
 	$('#other').on('click', function() {
@@ -70,16 +74,18 @@ $(document).ready(function() {
 	});
 
 	// ON CUSTOM FORM SUBMISSION
-	document.getElementById("idea-form").onsubmit = function submitCustom() {
-		let name = document.forms["idea-form"]["user_name"].value;
-		let phone = document.forms["idea-form"]["user_phone"].value;
+	if(document.getElementById("idea-form") != null) {
+		document.getElementById("idea-form").onsubmit = function submitCustom() {
+			let name = document.forms["idea-form"]["user_name"].value;
+			let phone = document.forms["idea-form"]["user_phone"].value;
 
-		// validate name and phone are not empty
-		if (name === "" || phone === "") {
-			alert("Please enter all required information.");
-		} else {
-			alert(`Thanks for your order ${name}! We will get back to you shortly.`);
-			document.getElementById('idea-form').reset();
+			// validate name and phone are not empty
+			if (name === "" || phone === "") {
+				alert("Please enter all required information.");
+			} else {
+				alert(`Thanks for your order ${name}! We will get back to you shortly.`);
+				document.getElementById('idea-form').reset();
+			}
 		}
 	}
 
