@@ -154,14 +154,14 @@ header a {
 	max-width: 45px;
 	transition: 0.5s ease-in;
 }
+.scrollUp nav p a {
+	font-size: 0.9em;
+}
 
 
 /* MAIN SECTION */
 .main-section {
 	display: flex;
-}
-.order {
-	z-index: -2;
 }
 h1 {
 	background: #d49b30;
@@ -170,7 +170,6 @@ h1 {
 	padding: 1%;
 	margin: 0;
 	text-align: center;
-	z-index: -1;
 }
 
 /* INTERESTED IN CUSTOM ORDERS */
@@ -182,6 +181,7 @@ h1 {
 }
 .interested p {
 	color: #f2f2f2;
+	font-weight: 300;
 }
 .interested .bold {
 	font-weight: 900;
@@ -189,6 +189,11 @@ h1 {
 .interested .custom {
 	font-style: italic;
 	text-decoration: underline;
+	color: #f2f2f2;
+	font-weight: 300;
+}
+.interested .custom a{
+	color: #f2f2f2;
 }
 
 /* FOOTER */
