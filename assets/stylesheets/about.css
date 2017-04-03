@@ -16,10 +16,11 @@ h3:nth-of-type(2) {
 }
 .baker-img {
 	background: #c3bbac;
+	overflow: hidden;
 }
 .baker-img img {
 	max-width: 100vw;
-	max-height: 50vh;
+	height: 50vh;
 }
 .first-img {
 	padding-top: 4%;
@@ -79,7 +80,8 @@ h3:nth-of-type(2) {
 		/*flex: 1;*/
 	}
 	.baker-img img{
-		max-width: 50vw;
+		/*max-width: 50vw;*/
+		max-height: 50vw;
 	}
 	.baker-bio {
 		width: 50vw;
