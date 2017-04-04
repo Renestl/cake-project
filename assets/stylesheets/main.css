@@ -144,6 +144,7 @@ header a {
 	padding: 2% 1.5%;
 	text-transform: uppercase;
 	position: fixed;
+	z-index: 100;
 	width: 100%;
 	transition: height 0.5s ease-out;
 }
