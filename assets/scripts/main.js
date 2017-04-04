@@ -1,45 +1,32 @@
 $(document).ready(function() {
 
-	// load header, footer and other common elements
-	$(function() {
-		$("#header").load("common/header.html");
-		// , function() {
-
-			// TODO
-			// Having issue of changing link colors after header load. Can select elements but only from inside the load function. 
-			// on click, the page reloads, but everything inside of the load function is done before the page reload, meaning it's lost.
-
-			// $("a").click(function() {
-
-				// $(this).attr('id').css('color', 'blue');
-			// 	console.log(linkId);
-
-			// 	setTimeout("$('a').css('color', 'blue')", 1500);
-
-			// });
-
-		$("#footer").load("common/footer.html");
-		$("#interest").load("common/interest.html");
+	// LOAD COMMON HEADER
+	$.ajax({
+		url: 'common/header.html',
+		dataType: 'html',
+		success: function(html){
+			$('#header').html(html);
+		}
 	});
 
-	// function changeColor() {
-	// 	$('#header a').removeClass('active');
-	// 	$(linkId).addClass('active');
-	// 	console.log(`work ${linkId}`);
-	// }
+	// LOAD COMMON FOOTER
+	$.ajax({
+		url: 'common/footer.html',
+		dataType: 'html',
+		success: function(html){
+			$('#footer').html(html);
+		}
+	});
 
-	// function changeColor() {
-	// 	$("a").click(function() {
-	// 		let linkId = $(this).attr('id')
-	// 		console.log(linkId);
-			
-	// 		if(linkId = 'menu') {
-	// 			$('a').css('color', 'black');
-	// 			$(linkId).css('color', 'blue');
-	// 			console.log(linkId);
-	// 		}
-	// 	})
-	// };
+	// LOAD COMMON INTEREST DIV
+	$.ajax({
+		url: 'common/interest.html',
+		dataType: 'html',
+		success: function(html){
+			$('#interest').html(html);
+		}
+	});
+
 	
 	// SHRINK & FIX NAV BAR ON SCROLL
 	$(window).on("scroll", function() {
@@ -48,8 +35,6 @@ $(document).ready(function() {
 		} else {
 			$('#header').removeClass('scrollUp');
 		}
-
-		
 	});
 
 
