@@ -1,33 +1,16 @@
 $(document).ready(function() {
 
 	// LOAD COMMON HEADER
-	$.ajax({
-		url: 'common/header.html',
-		dataType: 'html',
-		success: function(html){
-			$('#header').html(html);
-		}
-	});
-
+	$("#header").load("common/header.html");
 	// LOAD COMMON FOOTER
-	$.ajax({
-		url: 'common/footer.html',
-		dataType: 'html',
-		success: function(html){
-			$('#footer').html(html);
-		}
-	});
-
+	$("#footer").load("common/footer.html");
 	// LOAD COMMON INTEREST DIV
-	$.ajax({
-		url: 'common/interest.html',
-		dataType: 'html',
-		success: function(html){
-			$('#interest').html(html);
-		}
+	$("#interest").load("common/interest.html");
+
+	$("#header a").click(function() {
+		console.log('triggered');
 	});
 
-	
 	// SHRINK & FIX NAV BAR ON SCROLL
 	$(window).on("scroll", function() {
 		if ($(this).scrollTop() > 147) {
@@ -79,6 +62,14 @@ $(document).ready(function() {
 			}
 		}
 	}
+
+	// $.ajax({
+	// 	url: 'inventory.json',
+	// 	dataType: 'json',
+	// 	success: function(response) {
+	// 		console.log(response);
+	// 	}
+	// });
 
 
 });
