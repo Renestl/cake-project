@@ -1,15 +1,32 @@
 $(document).ready(function() {
 
 	// LOAD COMMON HEADER
-	$("#header").load("common/header.html");
+	$("#header").load("common/header.html", finishLoad);
 	// LOAD COMMON FOOTER
 	$("#footer").load("common/footer.html");
 	// LOAD COMMON INTEREST DIV
 	$("#interest").load("common/interest.html");
 
-	$("#header a").click(function() {
-		console.log('triggered');
-	});
+	// HIGHLIGHT CURRENT ROUTE IN NAVIGATION
+	var currentPath = window.location.pathname;
+
+	function finishLoad() {
+		var insideContent = $(".navigation").html();
+		if (currentPath == '/custom.html') {
+			var test = $('#custom');
+			$(test).addClass('navActive');
+		} else if (currentPath == '/menu.html') {
+			var test = $('#menu');
+			$(test).addClass('navActive');
+		} else if (currentPath == '/about.html') {
+			var test = $('#about');
+			$(test).addClass('navActive');
+		} else if (currentPath == '/hours.html') {
+			var test = $('#hours');
+			$(test).addClass('navActive');
+		} 
+	}	
+	
 
 	// SHRINK & FIX NAV BAR ON SCROLL
 	$(window).on("scroll", function() {
@@ -47,6 +64,7 @@ $(document).ready(function() {
 					.addClass('option-active');
 	});
 
+
 	// ON CUSTOM FORM SUBMISSION
 	if(document.getElementById("idea-form") != null) {
 		document.getElementById("idea-form").onsubmit = function submitCustom() {
@@ -62,6 +80,8 @@ $(document).ready(function() {
 			}
 		}
 	}
+
+
 
 	// $.ajax({
 	// 	url: 'inventory.json',
