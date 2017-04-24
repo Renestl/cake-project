@@ -81,16 +81,39 @@ $(document).ready(function() {
 		}
 	}
 
-
-
 	// $.ajax({
-	// 	url: 'inventory.json',
+	// 	url: cakeMenu,
 	// 	dataType: 'json',
 	// 	success: function(response) {
 	// 		console.log(response);
 	// 	}
 	// });
 
+	var cakeMenu = [];
+	var otherMenu = [];
+
+	var menuData = $.getJSON("https://raw.githubusercontent.com/Renestl/web_group_project_2/master/inventory.json", function(data) {
+
+		$.each(data, function(key, val) {
+			if (val.type == "Cake") {
+				cakeMenu.push(val);
+			} else if (val.type == "Other") {
+				otherMenu.push(val);
+			}
+			
+		});
+	})
+	.done(function() {
+		var newCakeMenu = cakeMenu.map(function(val){
+			return JSON.stringify(val);
+		})
+		console.log(newCakeMenu);
+	})
+
+	
+
+	
+	
 
 });
 
