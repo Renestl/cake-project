@@ -80,19 +80,13 @@ $(document).ready(function() {
 			}
 		}
 	}
+	
+	
+	// MENU DATA
+	$.getJSON("https://raw.githubusercontent.com/Renestl/web_group_project_2/master/inventory.json", function(data) {
 
-	// $.ajax({
-	// 	url: cakeMenu,
-	// 	dataType: 'json',
-	// 	success: function(response) {
-	// 		console.log(response);
-	// 	}
-	// });
-
-	var cakeMenu = [];
-	var otherMenu = [];
-
-	var menuData = $.getJSON("https://raw.githubusercontent.com/Renestl/web_group_project_2/master/inventory.json", function(data) {
+		var cakeMenu = [];
+		var otherMenu = [];
 
 		$.each(data, function(key, val) {
 			if (val.type == "Cake") {
@@ -100,17 +94,30 @@ $(document).ready(function() {
 			} else if (val.type == "Other") {
 				otherMenu.push(val);
 			}
-			
 		});
-	})
-	.done(function() {
+
+		// FOR CAKES
 		var newCakeMenu = cakeMenu.map(function(val){
-			return JSON.stringify(val);
-		})
-		console.log(newCakeMenu);
+			var content = `<div class="item"><h3>${val.name}</h3><p>${val.description}</p></div>`;
+			return content;
+		});
+
+		if (newCakeMenu.length) {
+			$('.menu-cakes').append(newCakeMenu);
+		}
+
+		// FOR OTHER
+		var newOtherMenu = otherMenu.map(function(val){
+			var otherContent = `<div class="item"><h3>${val.name}</h3><p>${val.description}</p></div>`;
+			return otherContent;
+		});
+
+		if (newOtherMenu.length) {
+			$('.menu-other').append(newOtherMenu);
+		}
+	
 	})
 
-	
 
 	
 	
